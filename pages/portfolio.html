@@ -17,39 +17,39 @@
 </head>
 <body>
 	<header class="header">
-		<nav class="header__nav header-nav-desktop">
+		<nav class="header__nav">
+			<input type="checkbox" name="" id="header__checkbox" class="header__checkbox">
+			<label for="header__checkbox" class="header__toogle">
+				<svg class="header__menu" viewBox="0 0 448 512" width="100" title="bars">
+					<path d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z" />
+				  </svg>
+				<svg class="header__close" viewBox="0 0 384 512" width="100" title="times">
+					<path d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z" />
+				  </svg>
+			</label>
+			<!--Menu items-->
 			<ul class="header__main">
-				<li class="header__item">
-					<a class="header__link" href="about.html">About me</a>
-				</li>
-				<li class="header__item">
-					<a class="header__link" href="portfolio.html">Portfolio</a>
-				</li>
-				<li class="header__logo">
-					<a class="header__link" href="/html/index.html">
-						<img class="logo__header" src="../images/img--logo-color.svg" alt="">
+				<li class="header__logo logo-mobile">
+					<a class="header__link" href="/index.html">
+						<img class="logo__header" src="/images/img--logo-color.svg" alt="">
 					</a>
 				</li>
 				<li class="header__item">
-					<a class="header__link" href="journal.html">Journal</a>
+					<a class="header__link" href="/pages/about.html">About me</a>
 				</li>
 				<li class="header__item">
-					<a class="header__link" href="contact.html">Contact</a>
+					<a class="header__link" href="/pages/portfolio.html">Portfolio</a>
 				</li>
-			</ul>
-		</nav>
-		<!--Mobile-->
-		<nav class="header__nav header-nav-mobile">
-			<figure class="header__logo">
-				<a class="header__link" href="/index.html">
-					<img class="logo__header" src="/images/img--logo-color.svg" alt="">
-				</a>
-			</figure>
-			<ul class="header__main">
-				<li class="header__item">
-					<a class="header__link" href="/pages/about.html">
-						<i class="fas fa-bars"></i>	
+				<li class="header__logo logo-desktop">
+					<a class="header__link" href="/index.html">
+						<img class="logo__header" src="/images/img--logo-color.svg" alt="">
 					</a>
+				</li>
+				<li class="header__item">
+					<a class="header__link" href="/pages/journal.html">Journal</a>
+				</li>
+				<li class="header__item">
+					<a class="header__link" href="/pages/contact.html">Contact</a>
 				</li>
 			</ul>
 		</nav>
@@ -111,9 +111,9 @@
 			</div>
 		</div>
 	</section>
-	<section class="section section--bg-img">
+	<section class="section section-bg-img section-img-hero">
 		<div class="section__row">
-			<div class="section__content">
+			<div class="section__content section-center">
 				<div class="section__content-title">
 					<h2 class="section__title section-h2">
 						LOREM IPSUM DOLOR
