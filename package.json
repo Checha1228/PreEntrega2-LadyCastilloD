@@ -1,0 +1,21 @@
+{
+  "name": "proyecto-desarrollo-web",
+  "version": "1.0.0",
+  "description": "Pre entrega 3",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/website-styles.scss css/website-styles.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Checha1228/PreEntrega2-LadyCastilloD.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Checha1228/PreEntrega2-LadyCastilloD/issues"
+  },
+  "homepage": "https://github.com/Checha1228/PreEntrega2-LadyCastilloD#readme"
+}

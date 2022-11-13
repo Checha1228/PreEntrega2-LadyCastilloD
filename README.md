@@ -1,5 +1,5 @@
-# Name
-PreEntrega2-LadyCastillo
+# Proyecto Desarrollo Web
+Lady Castillo
  
-## Comments
-Ajustes preentrega 2
+## Entrega:
+Pre entrega 3
