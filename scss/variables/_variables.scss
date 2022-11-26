@@ -15,3 +15,18 @@ $color-white: #ffffff;
 
 /*Font*/
 $font-default: 'Raleway', sans-serif;
+
+/*Mixins*/
+
+@mixin border-full($width, $color) {
+    border: $width solid $color;
+}
+
+@mixin bordered-double($width, $color) {
+    border-top:$width solid $color;
+    border-bottom: $width solid $color;
+}
+
+@mixin bordered-bottom($width, $color) {
+    border-bottom: $width solid $color;
+}

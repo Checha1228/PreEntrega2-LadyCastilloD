@@ -1,6 +1,11 @@
 @import "variables/variables";
 
-@import "components/layout";
+@import "layout/header";
+@import "layout/layout";
+@import "components/cards";
+@import "components/buttons";
+
+@import "mediaqueries";
 
 
 * {
@@ -17,4 +22,93 @@ body {
 	color: $color-grey-4;
 	font-family: $font-default;
 	position: relative;
+}
+
+h1,
+h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 300;
+}
+
+img {
+    height: auto;
+    object-fit: cover;
+    width: 100%;
+}
+
+.title {
+	&-h2-m {
+		border: 0;
+		font-size: 1.8em;
+		margin-bottom: 20px;
+		padding: 0;
+	}
+
+	&-simple {
+		margin-bottom: 32px;
+	}
+}
+
+.border-none {
+    border: 0;
+}
+
+/*Masonry*/
+
+.masonry {
+	&__block {
+		display: inline-block;
+		margin-bottom: 20px;
+		vertical-align: top;
+
+		img {
+			backface-visibility: hidden;
+			transform: all 0.8ms ease-in-out;
+		}
+
+		&:hover {
+			img {
+				opacity: .75;
+			}
+		}
+	}
+
+}
+
+/*Form*/
+.form {
+	&__group {
+		position: relative;
+		margin-bottom: 16px;
+	}
+
+	&__label {
+		color: $color-grey-5;
+	}
+
+	&__input {
+		background: rgba(0, 0, 0, 0.4);
+		border: 1px solid $color-grey-5;
+		box-sizing: border-box;
+		color: $color-grey-5;
+		margin-top: 8px;
+		padding: 8px 16px;
+		width: 100%;
+
+		&:focus {
+			outline: 0;
+			border: 1px solid $color-gold-3;
+		}
+	}
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+	-webkit-box-shadow: 0 0 0 1000px #1b1b1b inset !important;
+	-webkit-text-fill-color: $color-grey-5 !important;
 }

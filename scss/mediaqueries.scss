@@ -1,0 +1,213 @@
+@import "variables/variables";
+
+@media only screen and (min-width:768px) {
+
+	.section {
+		&-center {
+			left: 50%;
+			transform: translate(-50%, -50%);
+			top: 50%;
+			position: absolute;
+			width: 70%;
+		}
+
+		&-img-hero {
+			height: calc(100vh - 123px);
+		}
+
+		&-img-center {
+			margin: 0 auto;
+			width: 40%;
+		}
+
+		&__content-title {
+			margin: 32px auto 40px;
+			width: 60%;
+		}
+
+		&-m-7 {
+			margin: 0 auto;
+			width: calc(100% - 10%);
+		}
+
+		&__intro {
+			margin: 0 auto;
+			width: 80%;
+		}
+		
+		&__masonry {
+			column-count: 2;
+			-webkit-column-count: 2;
+			-moz-column-count:2;
+			padding-bottom: 20px;
+		}
+	}
+
+	.template-c-3 {
+        column-gap: 8px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+	.card {
+		&__title {
+			font-size: 1.6rem;
+		}
+	}
+
+	.btn {
+		&-content-xl-2 {
+			column-gap: 20px;
+			display: grid;
+			flex-direction: row;
+			grid-template-columns: repeat(2, 1fr);
+			min-height: auto;
+			width: 100%;
+		}
+
+		&-content-xl-3 {
+			column-gap: 20px;
+			display: grid;
+			flex-direction: row;
+			grid-template-columns: repeat(3, 1fr);
+			min-height: auto;
+			width: 100%;
+		}
+	}
+
+	.footer {
+		&__content {
+			align-items: center;
+			display: flex;
+			justify-content: space-between;
+		}
+
+		&__icons-content {
+			column-gap: 16px;
+			width: auto;
+		}
+	}
+
+}
+
+@media only screen and (min-width:960px) {
+
+	.header {
+
+		&__toogle {
+			display: none !important;
+		}
+		
+		&__main {
+			flex-direction: row;
+			justify-content: space-between;
+			margin: 0 auto;
+			width: 80%;
+
+			li {
+				display: block;
+			}
+		}
+
+	}
+
+	.logo {
+
+		&-mobile {
+			display: none !important;
+		}
+
+		&-desktop {
+			display: block !important;
+		}
+	}
+
+	.section {
+
+		&-center {
+			left: 50%;
+			transform: translate(-50%, -50%);
+			top: 50%;
+			position: absolute;
+			width: 70%;
+		}
+
+		&__img {
+			width: 30%;
+		}
+
+		&__masonry {
+			column-count: 3;
+			-webkit-column-count: 3;
+			-moz-column-count:3;
+		}
+
+		&__list-journal {
+			margin: 0 auto;
+			width: 80%;
+		}
+
+        &-l-7 {
+            margin: 0 auto;
+            width: 70%;
+        }
+
+        &-l-4 {
+            margin: 0 auto;
+            width: 40%;
+        }
+
+	}
+
+	.card {
+
+		&--item-journal {
+			display: grid;
+			column-gap: 40px;
+			grid-template-columns: repeat(2, 1fr);
+			margin: 80px 0;
+			padding: 0;
+		}
+		
+		&__image {
+			height: 445px;
+			overflow: hidden;
+		}
+	}
+
+}
+
+@media only screen and (min-width:1080px) {
+    
+   .section {
+
+        &-center {
+            left: 50%;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            position: absolute;
+            width: 50%;
+        }
+
+        &__masonry {
+            column-count: 4;
+            -webkit-column-count: 4;
+            -moz-column-count:4;
+        }
+
+   }
+
+   .grid-center {
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .form {
+
+        &__group-double {
+            column-gap: 20px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+}
